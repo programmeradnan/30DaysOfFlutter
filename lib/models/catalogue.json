@@ -1,0 +1,52 @@
+{
+  "Products": [
+    {
+      "id": "Adnan001",
+      "name": "Iphone 12 Pro",
+      "desc": "Apple iphone 12th generation",
+      "price": 999,
+      "color": "#33505a",
+      "image": "",
+    },
+    {
+      "id": "Adnan002",
+      "name": "Pixel 5",
+      "desc": "Google pixel 5th generation",
+      "price": 655,
+      "color": "#00ac51",
+      "image": "",
+    },
+    {
+      "id": "Adnan003",
+      "name": "Mi macbook air",
+      "desc": "apple macbook air with apple silicon",
+      "price": 1099,
+      "color": "#e0bfae",
+      "image": "",
+    },
+    {
+      "id": "Adnan004",
+      "name": "Playstation 5",
+      "desc": "Sony playstation 5th generation",
+      "price": 500,
+      "color": "#544ee4",
+      "image": "",
+    },
+    {
+      "id": "Adnan005",
+      "name": "Airpods pro",
+      "desc": "Apple airpods pro 1st generation",
+      "price": 999,
+      "color": "#e3e4e9",
+      "image": "",
+    },
+    {
+      "id": "Adnan006",
+      "name": "Ipad pro",
+      "desc": "Apple Ipad Pro 2020 edition",
+      "price": 799,
+      "color": "#f73984",
+      "image": "",
+    },
+  ]
+}
