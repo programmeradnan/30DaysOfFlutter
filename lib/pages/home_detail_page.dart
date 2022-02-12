@@ -12,7 +12,9 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar: ButtonBar(
         alignment: MainAxisAlignment.spaceBetween,
@@ -24,8 +26,8 @@ class HomeDetailPage extends StatelessWidget {
                 backgroundColor: MaterialStateProperty.all(MyTheme.darkBluishColor),
                 shape: MaterialStateProperty.all(StadiumBorder(),)
             ),
-            child: "Buy".text.xl.make(),
-          ).wh(100, 48),
+            child: "Add to cart".text.xl.make(),
+          ).wh(120, 48),
         ],
       ).p32(),
       body: SafeArea(
@@ -36,20 +38,23 @@ class HomeDetailPage extends StatelessWidget {
               tag: Key(Catalogue.id.toString()),
               child: Image.network(Catalogue.image),
             ).h32(context),
-            Expanded(child:
-            VxArc(
+            Expanded(
+                child:
+                VxArc(
               height: 30.0,
-              arcType: VxArcType.CONVEY,
-              edge: VxEdge.TOP,
-              child: Container(
+                  arcType: VxArcType.CONVEY,
+                  edge: VxEdge.TOP,
+                  child: Container(
                 color: Colors.white,
-                width: context.screenWidth,
-                child: Column(
-                    children: [
-                      Catalogue.name.text.xl4.color(MyTheme.darkBluishColor).bold.make(),
-                      Catalogue.desc.text.textStyle(context.captionStyle!).xl.make(),
-                      10.heightBox,
-                  ],
+                    width: context.screenWidth,
+                    child: Column(
+                      children: [
+                        Catalogue.name.text.xl4.color(MyTheme.darkBluishColor).bold.make(),
+                        Catalogue.desc.text.textStyle(context.captionStyle!).xl.make(),
+                        10.heightBox,
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis congue tellus. Praesent dictum fringilla felis non congue. Nunc non eros lorem. Vestibulum sagittis lacus sed enim rutrum, id sagittis neque mattis. Mauris eget ornare quam. Etiam tincidunt faucibus ante at dapibus. Donec efficitur non justo eget semper. Maecenas elementum aliquet libero eu consectetur."
+                            .text.textStyle(context.captionStyle!).make().p16(),
+                      ],
                 ).py64(),
               ),
             ))
