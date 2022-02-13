@@ -47,7 +47,7 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: context.cardColor,
+      // backgroundColor: context.cardColor,
       floatingActionButton: FloatingActionButton(onPressed: () => Navigator.pushNamed(context, MyRoute.CartRoute),
         backgroundColor: MyTheme.darkBluishColor,
         child: Icon(CupertinoIcons.cart),
@@ -59,7 +59,7 @@ class _HomepageState extends State<Homepage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CatalogueHeader(),
-              if(CatalogueModel.items != null && CatalogueModel.items.isNotEmpty)
+              if(CatalogueModel.items != null && CatalogueModel.items!.isNotEmpty)
                 CatalogueList().py16().expand()
               else
                 Center(child: CircularProgressIndicator().expand(),

@@ -14,9 +14,9 @@ class CatalogueList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
         shrinkWrap: true,
-        itemCount: CatalogueModel.items.length,
+        itemCount: CatalogueModel.items?.length,
         itemBuilder: (context,index){
-          final Catalogue=CatalogueModel.items[index];
+          final Catalogue=CatalogueModel.getByPos(index);
           return InkWell(
               onTap: () => Navigator.push(context, MaterialPageRoute(
                   builder: (context) => HomeDetailPage(Catalogue: Catalogue,),

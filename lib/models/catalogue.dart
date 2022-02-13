@@ -1,15 +1,22 @@
 import 'dart:convert';
 
 class CatalogueModel{
-  static List<Item> items=[
-    Item(id: 1,
-    name: "Iphone 12 Pro",
-    desc: "Apple iphone 12th generation",
-    price: 999,
-    color: "#33505a",
-    image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-r1.jpg",
-    )
-  ];
+  static List<Item>? items;
+
+  //get item by id
+  static Item? getByID(int id) => items?.firstWhere((element) => element.id == id, orElse: null);
+
+  //get item by position
+  static Item getByPos(int pos) => items![pos];
+  // =[
+  //   Item(id: 1,
+  //   name: "Iphone 12 Pro",
+  //   desc: "Apple iphone 12th generation",
+  //   price: 999,
+  //   color: "#33505a",
+  //   image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-r1.jpg",
+  //   )
+  // ];
 }
 
 
