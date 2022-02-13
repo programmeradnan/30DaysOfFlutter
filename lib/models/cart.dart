@@ -2,9 +2,9 @@ import 'package:flutter_catalogue/models/catalogue.dart';
 
 class CartModel {
 
-  static final cartModel = CartModel.internal();
-  CartModel.internal();
-  factory CartModel() => cartModel;
+  // static final cartModel = CartModel.internal();
+  // CartModel.internal();
+  // factory CartModel() => cartModel;
 
   //catalogue field
   late CatalogueModel _Catalogue;

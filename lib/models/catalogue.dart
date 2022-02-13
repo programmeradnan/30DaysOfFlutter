@@ -2,9 +2,9 @@ import 'dart:convert';
 
 class CatalogueModel{
 
-  static final catModel = CatalogueModel.internal();
-  CatalogueModel.internal();
-  factory CatalogueModel() => catModel;
+  // static final catModel = CatalogueModel.internal();
+  // CatalogueModel.internal();
+  // factory CatalogueModel() => catModel;
 
   static List<Item>? items;
 

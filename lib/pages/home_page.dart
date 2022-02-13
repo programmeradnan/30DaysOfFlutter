@@ -5,10 +5,8 @@ import 'package:flutter/widgets.dart';
 import 'dart:convert';
 import 'package:flutter_catalogue/models/catalogue.dart';
 import 'package:flutter_catalogue/utils/routes.dart';
-import 'package:flutter_catalogue/widgets/drawer.dart';
 import 'package:flutter_catalogue/widgets/home_widgets/catalogue_header.dart';
 import 'package:flutter_catalogue/widgets/home_widgets/catalogue_list.dart';
-import 'package:flutter_catalogue/widgets/item_widget.dart';
 import 'package:flutter_catalogue/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
