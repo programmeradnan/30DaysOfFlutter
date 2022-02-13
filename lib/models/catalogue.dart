@@ -4,10 +4,10 @@ class CatalogueModel{
   static List<Item>? items;
 
   //get item by id
-  static Item? getByID(int id) => items?.firstWhere((element) => element.id == id, orElse: null);
+  Item? getByID(int id) => items?.firstWhere((element) => element.id == id, orElse: null);
 
   //get item by position
-  static Item getByPos(int pos) => items![pos];
+  Item getByPos(int pos) => items![pos];
   // =[
   //   Item(id: 1,
   //   name: "Iphone 12 Pro",
